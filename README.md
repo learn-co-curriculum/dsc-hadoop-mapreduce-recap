@@ -12,6 +12,8 @@ MapReduce is an algorithm that sits on top of Hadoop ecosystem to handle big dat
 
 The major advantage of the MapReduce is that it is easy to scale jobs through distributed computing over multiple computing nodes. This simple scalability attracted many businesses to use the MapReduce model.
 
+# WIP need diagram for hadoop mapper and reducer
+
 ### Sample Code
 
 We'll run through the sample code to run through the sample input data.
