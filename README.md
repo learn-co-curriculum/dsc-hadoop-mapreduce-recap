@@ -1,4 +1,4 @@
-## Hadoop MapReduce Recap
+# Hadoop MapReduce Recap
 
 ### Glossary (WIP)
 
