@@ -1,8 +1,8 @@
 # Hadoop MapReduce Recap
 
-### Glossary (WIP)
+### Glossary 
 
-- primary node
+- primary node : 
 - secondary node
 - task
 
@@ -12,7 +12,6 @@ MapReduce is an algorithm that sits on top of Hadoop ecosystem to handle big dat
 
 The major advantage of the MapReduce is that it is easy to scale jobs through distributed computing over multiple computing nodes. This simple scalability attracted many businesses to use the MapReduce model.
 
-# WIP need diagram for hadoop mapper and reducer
 
 ### Sample Code
 
@@ -110,8 +109,6 @@ We're assuming the input file already exists in the `~/input_dir/`. We can run t
 $HADOOP_HOME/bin/hadoop jar hadoop_process.jar hadoop.SampleHadoopProcess input_dir output_dir
 ```
 
-
-#WIP need to attach the logs and the snapshot of hadoop home for CPU usage
 
 
 ### Summary
