@@ -1,10 +1,13 @@
 # Hadoop MapReduce Recap
 
+### Objectives
+
+- Reviewing Hadoop MapReduce Code in Java to further see the difference in PySpark
+
 ### Glossary 
 
-- primary node : 
-- secondary node
-- task
+- primary node : Primary node in a haddop cluster is responsible for delegating where to store files, health status check of secondary nodes, and job tracking. There is only one primary node for each cluster.
+- secondary node : Secondary node, or worker node is where the jobs are ran. Secondary node receives job information from the primary node. There can be multiple secondary nodes per cluster.
 
 ### Introduction
 
