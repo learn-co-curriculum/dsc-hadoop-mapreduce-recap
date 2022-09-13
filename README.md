@@ -6,19 +6,19 @@
 
 ### Glossary 
 
-- primary node : Primary node in a haddop cluster is responsible for delegating where to store files, health status check of secondary nodes, and job tracking. There is only one primary node for each cluster.
-- secondary node : Secondary node, or worker node is where the jobs are ran. Secondary node receives job information from the primary node. There can be multiple secondary nodes per cluster.
+- primary node : Primary node in a Hadoop cluster is responsible for delegating where to store files, the health status check of secondary nodes, and job tracking. There is only one primary node for each cluster.
+- secondary node : Secondary node, or the worker node, is where the jobs are run. The secondary node receives job information from the primary node. There can be multiple secondary nodes per cluster.
 
 ### Introduction
 
 MapReduce is an algorithm that sits on top of Hadoop ecosystem to handle big data processing through distributed computing. There are two important phases of MapReduce, which you can tell from the name, Map and Reduce. The mapper phase takes the input and converts it into key/value pairs. The reducer phase takes the output from the mapper phase as the input then aggregates the key/value pairs into even smaller tuples. The MapReduce job will be in sequence, as the name entails, the mapper job will always run before the reducer job.
 
-The major advantage of the MapReduce is that it is easy to scale jobs through distributed computing over multiple computing nodes. This simple scalability attracted many businesses to use the MapReduce model.
+The major advantage of MapReduce is that it is easy to scale jobs through distributed computing over multiple computing nodes. This simple scalability attracted many businesses to use the MapReduce model.
 
 
 ### Sample Code
 
-We'll run through the sample code to run through the sample input data.
+We'll run through the sample code with the sample input data.
 
 ```java
 
@@ -97,7 +97,7 @@ public class SampleHadoopProcess {
 
 #### Step 1
 
-Compile the sample code using `javac` command
+Compile the sample code using the `javac` command
 
 ```
 javac -classpath hadoop-core-1.2.1.jar -d hadoop_process SampleHadoopProcess.java
@@ -116,4 +116,4 @@ $HADOOP_HOME/bin/hadoop jar hadoop_process.jar hadoop.SampleHadoopProcess input_
 
 ### Summary
 
-The logs show that the pretty interesting output, especially which and how many CPUs it used. It also shows how much CPU time it used, so depending on the file input size, you'll be able to run some tests on how fast it can compute. Another way is to use different file format, like avro or parquet to read and write much faster to reduce the CPU time. 
+The logs show pretty interesting output, especially which and how many CPUs it used. It also shows how much CPU time it used. Depending on the file input size, you'll be able to run some tests on how fast it can compute. Another way is to use different file formats, like avro or parquet to read and write much faster to reduce the CPU time. 
